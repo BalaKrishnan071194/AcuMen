@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Acumen - A FinTech Platform for Chartered Accountants, Certified Public Accountants (CA/CPA), Company
+		Secretaries and MSMEs</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
+
+	<!--<div class="preloader"><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div></div>-->
+	<style>
+		@media (min-width: 576px) {}
+
+
+		@media (min-width: 768px) {}
+
+
+		@media (min-width: 992px) {
+			body {
+				background-image: url("assets/img/Automate/automate_banner.png");
+				background-repeat: no-repeat;
+				background-position-x: right;
+				background-position-y: top;
+				z-index: 1
+			}
+
+			.oval1 {
+				background-image: url("assets/img/Home/oval_1.png");
+				background-repeat: no-repeat;
+				background-position-x: 60px;
+				background-position-y: 10px;
+			}
+
+			.oval2 {
+				background-image: url("assets/img/Home/oval_2.png");
+				background-repeat: no-repeat;
+				background-position-x: 0px;
+				background-position-y: 210px;
+				z-index: 1;
+			}
+		}
+
+
+		@media (min-width: 1200px) {
+			body {
+				background-image: url("assets/img/Automate/automate_banner.png");
+				background-repeat: no-repeat;
+				background-position-x: right;
+				background-position-y: top;
+				z-index: 1
+			}
+
+			.oval1 {
+				background-image: url("assets/img/Home/oval_1.png");
+				background-repeat: no-repeat;
+				background-position-x: 10px;
+				background-position-y: 10px;
+			}
+
+			.oval2 {
+				background-image: url("assets/img/Home/oval_2.png");
+				background-repeat: no-repeat;
+				background-position-x: 0px;
+				background-position-y: 210px;
+				z-index: 1;
+			}
+		}
+
+		@media(min-width:1471px) {
+			body {
+				background-image: url("assets/img/Automate/automate_banner.png");
+				background-repeat: no-repeat;
+				background-position-x: right;
+				background-position-y: top;
+				z-index: 1
+			}
+
+			.oval1 {
+				background-image: url("assets/img/Home/oval_1.png");
+				background-repeat: no-repeat;
+				background-position-x: 200px;
+				background-position-y: 10px;
+			}
+
+			.oval2 {
+				background-image: url("assets/img/Home/oval_2.png");
+				background-repeat: no-repeat;
+				background-position-x: 0px;
+				background-position-y: 110px;
+				z-index: 1;
+			}
+
+		}
+
+		.rectangle-chip {
+			width: 20px;
+			height: 20px;
+			margin: 0 15px 0 0;
+			padding-left: 15px;
+			font-family: Caros;
+			font-size: 14px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: 0.44px;
+			color: #636363 !important;
+		}
+
+		.fixed-top {
+			position: relative;
+		}
+
+		.img-center {
+			max-width: 100%;
+		}
+
+		.line-right {
+			width: 50%;
+			background: transparent;
+			border: none;
+			border-top: dashed 2px orange;
+			padding: 60px 140px;
+			border-radius: 50%;
+			margin: 20px -50px 0;
+			transform: rotate(60deg);
+			position: absolute;
+			left: 30%;
+		}
+
+		.line-left {
+			width: 40%;
+			background: transparent;
+			border: none;
+			border-bottom: dashed 2px orange;
+			padding: 40px 40px;
+			border-radius: 0 0 50% 50%;
+			margin: 0 -65px;
+			transform: rotate(-45deg);
+			position: absolute;
+			right: 35%;
+		}
+
+
+
+		.unfilled-btn {
+			width: 87px;
+			height: 18px;
+			margin: 0 10px 0 0;
+			font-family: Caros;
+			font-size: 15px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: 0.47px;
+			color: #ff4600;
+		}
+
+		.Work-the-way-you-wan {
+			font-family: Caros;
+			font-size: 40px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: 0.67px;
+			color: #323452;
+
+		}
+
+		.rounded {
+			margin-left: 20px;
+		}
+
+
+		.skbanner1 {
+			background: #FFF;
+			padding: 25px 25px;
+		}
+
+		.skbanner2 {
+			background: #FFF;
+			padding: 25px 0px;
+		}
+
+		.m-0-10 {
+			margin: 0px 20px !important;
+		}
+
+		.pd-7 {
+			padding: 7em 1em;
+		}
+
+		.p-bt {
+			padding-bottom: 5em;
+		}
+
+		.pd-10 {
+			text-align: center;
+			padding: 10px 10px !important;
+			margin-bottom: 30px;
+		}
+
+		.h-btn {
+			background: #fff;
+			color: #fff !important;
+			border-radius: 25px 25px;
+			padding: 16px 25px 16px 25px;
+			box-shadow: 0 0 16px 0 #f5ddd5;
+			background-color: #ffffff;
+		}
+
+		.pd-12 {
+			padding: 12px 12px;
+		}
+
+		.btn-wt {
+			background: #FFF;
+			color: #000;
+			padding: 14px;
+		}
+
+		.row-card {
+			margin-top: 150px;
+			padding-left: 150px
+		}
+
+
+
+		.card {
+			border: none;
+		}
+
+		.awards {
+			font-family: Caros;
+			font-size: 18px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.56;
+			letter-spacing: 0.56px;
+			color: #ff4600;
+		}
+
+		.proud {
+			font-family: Caros;
+			font-size: 40px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: 0.67px;
+			color: #323452;
+		}
+
+		.practice-sub {
+			margin: 5px 69px 10px 0;
+			font-family: Caros;
+			font-size: 40px;
+			font-weight: bold;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: 0.67px;
+			color: #323452;
+		}
+
+		.practice-content {
+			margin: 10px 0 30px 2px;
+			font-family: Caros;
+			font-size: 16px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.5;
+			letter-spacing: 0.5px;
+			color: #636363;
+		}
+
+		.second-content {
+			font-family: Caros;
+			font-size: 40px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: 0.67px;
+			color: #323452;
+		}
+
+		.content-desc {
+			font-family: Caros;
+			font-size: 16px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.5;
+			letter-spacing: 0.5px;
+			text-align: center;
+			color: #636363;
+		}
+
+		red-font-20 {
+			font-family: Caros;
+			font-size: 20px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: center;
+		}
+
+		.img-title {
+			padding-top: 50px;
+			padding-bottom: 15px;
+			font-family: Caros;
+			font-size: 20px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: center;
+			color: #ff4600;
+		}
+
+		.img-content {
+			font-family: Caros;
+			font-size: 15px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.33;
+			letter-spacing: normal;
+			text-align: center;
+			color: #283b5e;
+		}
+
+		.count {
+			font-size: 50px;
+			font-weight: bold;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: center;
+			color: #283b5e;
+		}
+
+		.count-content {
+			opacity: 0.6;
+			font-family: Caros;
+			font-size: 20px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: center;
+			color: #283b5e;
+		}
+
+
+		.im-pdt {
+			padding-top: 5em;
+			width: 35em;
+		}
+
+
+
+		.m-lf {
+			margin: 0 0 0 12px;
+		}
+
+		.im-lf {
+			height: 20em;
+			width: auto;
+			padding-left: 33%;
+		}
+
+
+
+		.t-lf {
+			text-align: left;
+		}
+
+		.bx-sh {
+			box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+		}
+
+		.pd-15 {
+			padding: 1.5em;
+		}
+
+		.pd-ex {
+			padding: 1.5em 1.5em 2.5em 1.5em;
+
+		}
+
+
+
+		.ft-19 {
+			font-size: 19px;
+		}
+
+		.ft-14 {
+			font-size: 14px;
+		}
+
+		.f-fm {
+			width: 49px;
+			height: 23px;
+			/* margin: 14px 167px 33px 20px; */
+			/* font-family: Caros; */
+			font-size: 19px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: #283b5e;
+			color: #283b5e;
+			padding: 0px 0px 0 15px;
+		}
+
+		.Lorem-ipsum-dolor-si {
+			width: 285px;
+			height: 66px;
+			margin: 20px 0 0 1px;
+			opacity: 0.6;
+			font-family: Caros;
+			font-size: 14px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.57;
+			letter-spacing: normal;
+			color: #283b5e;
+		}
+
+		.Fi-Risk {
+			width: 1151px;
+			height: 72px;
+			margin: 20px 144px 80px 47px;
+			font-family: Caros;
+			font-size: 16px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.5;
+			letter-spacing: 0.5px;
+			text-align: center;
+			color: #636363;
+		}
+
+
+
+		a:hover {
+			color: #fff;
+		}
+
+		.line {
+			margin: 40px 0px 40px 0px;
+			border-right: solid 1px #979797;
+			opacity: 0.1;
+		}
+
+		.pd-0 {
+			padding: 0px;
+		}
+
+		.im-lf-1 {
+			height: 21em;
+			width: auto;
+			/* padding-left: 33%; */
+		}
+
+		.Client-Management {
+			height: 48px;
+			margin: 0;
+			font-family: Helvetica;
+			font-size: 40px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: 0.67px;
+			color: #323452;
+		}
+
+		.Acumen-in {
+			height: 84px;
+			margin: 15px 0 0;
+			opacity: 0.6;
+			font-family: Helvetica;
+			font-size: 17px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.65;
+			letter-spacing: normal;
+			color: #283b5e;
+		}
+
+		.pd-10-1 {
+			padding: 20px 20px 20px 20px;
+		}
+
+		.tx-r {
+			text-align: right;
+		}
+
+		.cm {
+			width: 470px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="pb-165">
+		<header class="header fixed-top ">
+			<div class="header-main love-sticky" style="padding-top: 15px">
+				<div class="container">
+					<div class="row align-items-center position-relative">
+						<div class="col-xl-2 col-lg-2 col-sm-3 col-5">
+							<div class="logo align-top">
+								<a href="home.html"><img src="assets/img/Home/acumen_logo.png" class="main-logo" alt="">
+									<img src="assets/img/Home/acumen_logo.png" class="sticky-logo" alt=""></a>
+							</div>
+						</div>
+
+						<div
+							class="col-lg-10 col-sm-9 col-7 d-flex align-items-center justify-content-end position-static">
+							<div class="nav-wrapper">
+								<ul class="nav">
+									<li class="header-nav"><a  href="home.html">Home</a></li>
+									<li class="header-nav header-nav-prod" style="padding-right: 3px"><a
+											href="#">Product <img src="assets/img/Home/product_do wn_arrow.png" alt=""
+											class="current-menu-parent hide-xs">
+										</a>
+										<ul class="sub-menu scroll-md">
+											<hr class="sub-underline">
+											<div class="header-lay">
+												<div class="row" style="padding-bottom: 20px">
+													<div class="col-lg-3 col-md-12 col-sm-12 col-12">
+														<div class="rectangle product-overview">
+															<a href="product-overview.html" class="current-menu-parent"> <img alt=""
+																	src="assets/img/Product_Dropdown/Overview.png"><span
+																	class="drop-down-header">Overview</span>
+																<div class="drop-down-content">Connect Acumen with
+																	the tools you already use to have all your team’s
+																	work
+																	in one place.</div>
+															</a>
+														</div>
+													</div>
+
+													<div class="col-lg-3 col-md-12 col-sm-12 col-12">
+														<div class="rectangle">
+															<a href="product-integrate.html"> <img alt=""
+																	src="assets/img/Product_Dropdown/integrate.png">
+																<span class="drop-down-header">Integration</span>
+
+																<div class="drop-down-content">Connect Acumen with
+																	the tools you already use to have all your team’s
+																	work
+																	in one place.</div>
+															</a>
+														</div>
+													</div>
+
+													<div class=" col-lg-3 col-md-12 col-sm-12 col-12">
+														<div class="rectangle cur-product">
+															<a href="product-automate.html"> <img alt=""
+																	src="assets/img/Product_Dropdown/automate.png">
+																<span class="drop-down-header">Automate </span>
+																<div class="drop-down-content">Connect Acumen with
+																	the tools you already use to have all your team’s
+																	work
+																	in one place.</div>
+
+															</a>
+														</div>
+													</div>
+
+													<div class="col-lg-3 col-md-12 col-sm-12 col-12">
+														<div class="rectangle ">
+															<a href="product-analyse.html"> <img alt=""
+																	src="assets/img/Product_Dropdown/analize.png"> <span
+																	class="drop-down-header">Analyse</span>
+																<div class="drop-down-content">Connect Acumen with
+																	the tools you already use to have all your team’s
+																	work
+																	in one place.</div>
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-lg-3 col-md-12 col-sm-12 col-12">
+														<div class="rectangle">
+															<a href="product-expand.html"> <img alt=""
+																	src="assets/img/Product_Dropdown/expand.png"><span
+																	class="drop-down-header"> Expand</span>
+																<div class="drop-down-content">Connect Acumen with
+																	the tools you already use to have all your team’s
+																	work
+																	in one place.</div>
+															</a>
+														</div>
+													</div>
+
+												</div>
+
+											</div>
+										</ul>
+									</li>
+									<li class="header-nav"><a href="about-us.html">About us</a></li>
+									<li class="header-nav"><a href="product-contact.html">Contact</a></li>
+									<li class="header-nav" data-toggle="modal" data-target="#login"><a
+											href="#">Login</a></li>
+
+
+									<li class="header-btn" data-toggle="modal" data-target="#success"><a href="#"><span
+												class="lets-connect">Let's
+												Connect</span> <img src="assets/img/Home/lets_connect_arrow.png"
+												style="padding-left: 10px" alt=""> </a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+
+
+	<section class="service oval2">
+		<div class="pt-50 pb-165 oval1">
+			<div class="container text-m-center">
+				<div class="row first-mob-img " style="margin-left: 2%;">
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12  ">
+						<div class="">
+							<img src="assets/img/Home/home_banner11.jpg" data-rjs="2" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="row banner-btw-btn" style="margin-left: 2%;">
+					<div class="col-xl-6 col-lg-7 col-md-12 col-sm-12 col-12 text-xs-center ">
+						<h1 class="ft-clr ">
+							Create a more <br />efficient workflow
+						</h1>
+						<p class="sub-title ">
+							One platform to digitise CA, CPA, CS practice and seamlessly collaborate with its MSME
+							clients.
+						</p>
+						<div class="row ">
+							<div class="col-lg-auto col-md-auto col-md-12 col-12 text-xs-center text-m-center"
+								style="padding-top: 30px;" data-toggle="modal" data-target="#getStarted">
+								<a href="#" class="btn get-started">Get started <img style="padding-left: 10px"
+										src="assets/img/Home/get_started_arrow.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+
+		<div class="service">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="section-title title-shape title-shape-c2 text-center">
+							<P class="awards">Automate & Organise</p>
+							<p class="proud">Solutions for every service <br> you offer your clients</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="skbanner1 pd-10-1">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-7 col-md-12 col-sm-12 col-12  text-xs-center text-m-center">
+							<div class="position-relative" style="z-index: 1;">
+								<img src="assets/img/Automate/client_management.png" data-rjs="2" alt=""
+									class="img-center">
+							</div>
+						</div>
+						<div class="col-lg-5  col-md-12 col-sm-12 col-12  text-xs-center mt30" style="margin: auto;">
+							<div class="banner-content">
+								<label class="practice-sub Client-Management"> Client Management
+								</label> <label class="practice-content Acumen-in">Acumen in Collaboration platform
+									between
+									Practising Accounting firm or Certified Practicing Accountant and its end Client to
+									embark on digital automation journey.</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="line-right hide-xs"></div>
+		</div>
+
+
+		<div>
+			<div class="skbanner1 pd-10-1">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-12 col-sm-12  col-12 first-mob-img text-m-center text-xs-center">
+							<img src="assets/img/Automate/team_management.png" data-rjs="2" alt="" class="img-center">
+						</div>
+
+						<div class=" col-lg-5  col-md-12 col-sm-12 col-12  text-xs-center mt30" style="margin: auto;">
+							<label class="practice-sub Client-Management ">Team Management
+							</label> <label class="practice-content Acumen-in ">Acumen in Collaboration platform
+								between Practising Accounting firm or Certified Practicing Accountant and its end Client
+								to embark on digital automation journey.</label>
+
+						</div>
+						<div class="offset-lg-1 offset-md-1 col-md-6 col-lg-6 col-12 hide-xs text-m-center text-xs-center position-relative"
+							style="z-index: 1;">
+							<img src="assets/img/Automate/team_management.png" data-rjs="2" alt="" class="img-center">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="line-left hide-xs"></div>
+		</div>
+
+		<div>
+			<div class="skbanner1 pd-10-1 ">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-7 col-md-12 col-sm-12 col-12 text-xs-center text-m-center">
+							<div class="position-relative" style="z-index: 1;">
+								<img src="assets/img/Automate/compliance_management.png" data-rjs="2" alt=""
+									class="img-center">
+							</div>
+						</div>
+
+						<div class="col-lg-5 col-md-12 col-sm-12 col-12 text-xs-center text-m-center mt30"
+							style="margin: auto;">
+							<div class="banner-content">
+								<label class="practice-sub Client-Management "> Compliance Management
+								</label> <label class="practice-content Acumen-in">Acumen in Collaboration platform
+									between
+									Practising Accounting firm or Certified Practicing Accountant and its end Client to
+									embark on digital automation journey.</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="line-right hide-xs"></div>
+		</div>
+
+		<div>
+			<div class="skbanner1 pd-10-1 " style="padding-bottom: 100px;">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-12  position-relative first-mob-img text-xs-center text-m-center">
+							<img src="assets/img/Automate/doc_exchange.png" data-rjs="2" alt="" class="img-center">
+						</div>
+
+						<div class="col-lg-5 col-md-12 col-sm-12 col-12 text-xs-center text-m-center mt30 tx-r"
+							style="margin: auto;">
+							<div class="banner-content">
+								<label class="practice-sub Client-Management tx-r"> Document Exchange
+								</label> <label class="practice-content Acumen-in tx-r">Acumen in Collaboration platform
+									between Practising Accounting firm or Certified Practicing Accountant and its end
+									Client
+									to embark on digital automation journey.</label>
+							</div>
+						</div>
+						<div class="offset-lg-1 offset-md-1 col-md-12 col-lg-6 col-12 hide-xs position-relative">
+							<img src="assets/img/Automate/doc_exchange.png" data-rjs="2" alt="" class="img-center">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div>
+			<div class="skbanner2" style="background-color: #fff9f6">
+				<div class="row">
+					<div class="col-12">
+						<div class="section-title title-shape title-shape-c2 text-center">
+							<P class="awards ">Modules</p>
+							<p class="Work-the-way-you-wan">Work the way you want</p>
+							<P class="content-desc">Pick the modules you like to subscribe</p>
+						</div>
+					</div>
+				</div>
+				<div class="content-desc">
+					<button type="button" class="btn-br shadow p-3 mb-5 bg-white rounded ">
+						<input class="form-check-input" type="checkbox" value="ClientManagement" id="ClientManagement">
+						<span class="rectangle-chip"></span> <span class="rectangle-chip"> Client Management</span>
+					</button>
+					<button type="button" class="btn-br shadow p-3 mb-5 bg-white rounded">
+						<input class="form-check-input" type="checkbox" value="TeamManagement" id="TeamManagement">
+						<span class="rectangle-chip"></span> <span class="rectangle-chip">Team Management</span>
+					</button>
+					<button type="button" class="btn-br shadow p-3 mb-5 bg-white rounded">
+						<input class="form-check-input" type="checkbox" value="ComplianceManagement"
+							id="ComplianceManagement">
+						<span class="rectangle-chip"> </span> <span class="rectangle-chip">Compliance
+							Management</span>
+					</button>
+					<button type="button" class="btn-br shadow p-3 mb-5 bg-white rounded">
+						<input class="form-check-input" type="checkbox" value="DocumentExchange" id="DocumentExchange">
+						<span class="rectangle-chip"></span> <span class="rectangle-chip">Document Exchange</span>
+					</button>
+					<br>
+					<button type="button" class="btn-br shadow p-3 mb-5 bg-white rounded">
+						<input class="form-check-input" type="checkbox" value="EnterpriseAnalytics"
+							id="EnterpriseAnalytics">
+						<span class="rectangle-chip"></span> <span class="rectangle-chip">Enterprise
+							Analytics</span>
+					</button>
+					<button type="button" class="btn-br shadow p-3 mb-5 bg-white rounded">
+						<input class="form-check-input" type="checkbox" value="FinancialAnalytics"
+							id="FinancialAnalytics">
+						<span class="rectangle-chip"></span> <span class="rectangle-chip">Financial Analytics</span>
+					</button>
+					<button type="button" class="btn-br shadow p-3 mb-5 bg-white rounded">
+						<input class="form-check-input" type="checkbox" value="e-Invoicing" id="e-Invoicing">
+						<span class="rectangle-chip"></span> <span class="rectangle-chip">e-Invoicing</span>
+					</button>
+					<button type="button" class="btn-br shadow p-3 mb-5 bg-white rounded">
+						<input class="form-check-input" type="checkbox" value="GSTManagement" id="GSTManagement">
+						<span class="rectangle-chip"></span> <span class="rectangle-chip">GST Management</span>
+					</button>
+					<br>
+					<button type="button" class="btn-br shadow p-3 mb-5 bg-white rounded">
+						<input class="form-check-input" type="checkbox" value="" id="KYCAML">
+						<span class="rectangle-chip"></span> <span class="rectangle-chip">KYC/AML</span>
+					</button>
+					<button type="button" class="btn-br shadow p-3 mb-5 bg-white rounded">
+						<input class="form-check-input" type="checkbox" value="SMEFunding" id="SMEFunding">
+						<span class="rectangle-chip"></span> <span class="rectangle-chip">SME Funding</span>
+					</button>
+					<button type="button" class="btn-br shadow p-3 mb-5 bg-white rounded">
+						<input class="form-check-input" type="checkbox" value="MarketPlace" id="MarketPlace">
+						<span class="rectangle-chip"></span> <span class="rectangle-chip">Market Place</span>
+					</button>
+					<br>
+				</div>
+				<div class="row">
+					<div class="offset-lg-5 offset-md-5  offset-3 text-center" style="padding: 0px 10px;">
+						<div class="banner-btn-group" style="padding: 30px 0px">
+							<div class="text-center" data-toggle="modal" data-target="#getStarted">
+								<a href="#" class="btn btn get-started">Get started <img style="padding-left: 7px"
+										src="assets/img/Home/get_started_arrow.png" alt=""></a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="plain-banner">
+			<div class="container ">
+				<div class="row">
+					<div class="col-12">
+						<div class="section-title title-shape title-shape-c2 text-center">
+							<label class="awards" style="padding-bottom: 10px">Efficient
+								Workflow</label>
+							<h4 class="second-content" style="padding-bottom: 20px">Digital
+								Roadmap for Practice Management</h4>
+							<p class="content-desc">
+								Acumen in Collaboration platform between Practising Accounting
+								firm or Certified Practicing Accountant and its <br> end
+								Client to embark on ditital automation journey.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="pd-10 ">
+							<div class="service-icon">
+								<h1 class="count">3420+</h1>
+								<span class="count-content">Users</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="pd-10">
+							<div class="service-icon">
+								<h1 class="count">06</h1>
+								<span class="count-content">Award Winner</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="pd-10">
+							<div class="service-icon">
+								<h1 class="count">2k</h1>
+								<span class="count-content">Worldwide Users</span>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-3 col-md-6">
+						<div class="pd-10">
+							<div class="service-icon">
+								<h1 class="count">89</h1>
+								<span class="count-content">Award Winner</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row " style="padding-top:60px ;">
+					<div class="col-md-6 col-sm-12 col-12 text-xs-center text-right pt-sm-0 "
+						style="padding: 0 30px 0 0;">
+						<a href="#" class="btn get-started">Know More <img src="assets/img/Home/get_started_arrow.png"
+								style="padding-left: 12px" alt=""></a>
+					</div>
+					<div class="col-md-6 col-sm-12 col-12 text-left text-xs-center pt-sm-20"
+						style="padding: 15px 0 0 0;">
+						<a href="#" class="clr-cr "><span class="unfilled-btn">Pricing</span> <img
+								src="assets/img/Home/lets_connect_arrow.png" class="main-logo" alt=""> </a>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+		<footer class="footer">
+			<div class="row footer-logo footer-adjust text-xs-center">
+				<div class="col-lg-3 col-md-12 col-sm-12 col-12 pd-0">
+					<img src="assets/img/Home/acumen_logo.png">
+				</div>
+			</div>
+			<div class="row footer-adjust">
+				<div class="offset-lg-1  col-lg-1 col-md-5  col-sm-12 col-12 text-left text-xs-center pd-0">
+					<div class="widget widget_nav_menu">
+						<h3 class="footer-header">Company</h3>
+						<ul id="menu">
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Career</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class=" col-lg-1 col-md-1 text-center line "></div>
+
+				<div class="offset-lg-1 col-lg-1 col-md-5 col-sm-12 col-12 text-left text-xs-center  pd-0">
+					<div class="widget widget_nav_menu">
+						<h3 class="footer-header">Product</h3>
+						<ul id="menu">
+							<li><a href="product-overview.html">Overview</a></li>
+							<li><a href="product-integrate.html">Integration</a></li>
+							<li><a href="product-automate.html">Automate</a></li>
+							<li><a href="product-analyse.html">Analyse</a></li>
+							<li><a href="product-expand.html"> Expand</a></li>
+						</ul>
+
+					</div>
+				</div>
+
+				<div class=" col-lg-1 col-md-1 text-center line hide-xs "></div>
+
+				<div class=" offset-lg-1 col-lg-1  col-md-5 col-sm-12 col-12 text-left text-xs-center pd-0">
+					<div class="widget widget_nav_menu">
+						<h3 class="footer-header">Useful Link</h3>
+						<div class="menu-dvpn-container">
+							<ul class="menu" id="menu">
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Support</a></li>
+								<li><a href="#">FAQ's</a></li>
+								<li><a href="#">News Letters</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class=" col-lg-1 col-md-1 text-right  line "></div>
+
+				<div class="offset-lg-1 col-lg-2 col-md-5 col-sm-12 col-12 text-left text-xs-center  pd-0">
+					<div class="widget widget_nav_menu" id="connect-us">
+						<h3 class="footer-header">Contact with us</h3>
+						<a href="https://www.facebook.com/"><i class="fa fa-facebook pd-10"></i> </a> <a
+							href="https://twitter.com/"><i class="fa fa-twitter pd-10"></i> </a> <a
+							href="https://www.linkedin.com/"><i class="fa fa-linkedin pd-10"></i> </a>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="row" style="padding-top: 20px">
+				<div class="offset-1 col-10 " style="border-top: 1px solid #dee2e7">
+					<div class="footer-bottom-text text-center ">Copyright 2020.
+						All rights reserved by Acumen Analytics Services Pvt. Ltd.</div>
+				</div>
+
+			</div>
+		</footer>
+
+		<!--Login  Modal -->
+		<div class="modal " id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl" role="document">
+				<div class="modal-content">
+					<div class="modal-body ">
+						<div class="row">
+							<div class="col-lg-6 col-md-12 col-sm-12 col-12 hide-xs "
+								>
+								<div class="login-box-1">
+									<img src="assets\img\login\logo.png" class="main-logo" alt="">
+									<div class="login-brand-content">Acumen is a FinTech
+										Innovation for Small and Medium Practices..</div>
+									<div class="digi">One platform to digitise CA, CPA, CS
+										practice and seamlessly collaborate with its MSME clients.</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12 col-sm-12 col-12  " >
+								<button type="button" style="padding: 12px;" class="close" data-dismiss="modal"
+									aria-label="Close">
+									<img src="assets\img\login\close.png">
+								</button>
+								<div class="login-box-2 login-form">
+									<div class="sign-in-as">
+										<span>Sign in as..</span>
+									</div>
+
+									<ul class="nav nav-tabs" id="myTab" role="tablist">
+										<li class="nav-item"><a class="nav-link active " id="home-tab" data-toggle="tab"
+												href="#home" role="tab" aria-controls="home" aria-selected="true">CA</a>
+										</li>
+										<li class="nav-item"><a class="nav-link" id="profile-tab" data-toggle="tab"
+												href="#profile" role="tab" aria-controls="profile"
+												aria-selected="false">Customer</a></li>
+
+									</ul>
+									<div class="tab-content" id="myTabContent">
+										<div class="tab-pane fade show active" id="home" role="tabpanel"
+											aria-labelledby="home-tab">
+											<div class="form-field">
+												<form>
+													<div class="form-group ">
+														<label for="exampleInputEmail1">Username </label> <input
+															type="email" class="form-control" id="Username"
+															aria-describedby="Username" placeholder="Krish">
+													</div>
+													<div class="form-group ">
+														<label for="password">Password</label> <input type="password"
+															class="form-control" id="password" placeholder="Password">
+													</div>
+													<div>
+														<button class="btn text-xs-center submit-btn-font"
+															style="padding-top: 20px">
+															Submit <img src="assets/img/Home/get_started_arrow.png"
+																style="padding-left: 19px" alt="">
+														</button>
+													</div>
+												</form>
+
+											</div>
+										</div>
+										<div class="tab-pane fade" id="profile" role="tabpanel"
+											aria-labelledby="profile-tab">
+											<div class="tab-pane fade show active" id="home" role="tabpanel"
+												aria-labelledby="home-tab">
+												<div class="form-field">
+													<form>
+														<div class="form-group ">
+															<label for="exampleInputEmail1">Username </label> <input
+																type="email" class="form-control" id="Username"
+																aria-describedby="Username" placeholder="Krish">
+														</div>
+														<div class="form-group ">
+															<label for="password">Password</label> <input
+																type="password" class="form-control" id="password"
+																placeholder="Password">
+														</div>
+														<button class="btn submit-btn-font text-xs-center"
+															style="padding-top: 20px">
+															Submit <img src="assets/img/Home/get_started_arrow.png"
+																style="padding-left: 19px" alt="">
+														</button>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-12 col-sm-12 col-12 first-mob-img "
+								>
+								<div class="login-box-1">
+									<img src="assets\img\login\logo.png" class="main-logo" alt="">
+									<div class="login-brand-content">Acumen is a FinTech
+										Innovation for Small and Medium Practices..</div>
+									<div class="digi">One platform to digitise CA, CPA, CS
+										practice and seamlessly collaborate with its MSME clients.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Get started  Modal -->
+		<div class="modal " id="getStarted" tabindex="-1" role="dialog" aria-labelledby="getStarted" aria-hidden="true">
+			<div class="modal-dialog modal-xl" role="document">
+				<div class="modal-content">
+					<div class="modal-body ">
+						<div class="row ">
+
+							<div class="col-lg-6 col-md-12 col-12 hide-xs get-box-1">
+									<img src="assets\img\login\logo.png" class="main-logo" alt="">
+									<div class="login-brand-content">Acumen is a FinTech
+										Innovation for Small and Medium Practices..</div>
+									<div class="digi">One platform to digitise CA, CPA, CS
+										practice and seamlessly collaborate with its MSME clients.</div>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-12  col-sm-12  col-12 " >
+								<button type="button" style="padding: 12px;" class="close" data-dismiss="modal"
+									aria-label="Close">
+									<img src="assets\img\login\close.png">
+								</button>
+								<div class="login-box-2 login-form">
+									<div class="sign-in-as">
+										<span>Get started..</span>
+									</div>
+									<div class="form-field-1">
+										<form>
+											<div class="form-group ">
+												<label for="exampleInputEmail1">Name </label> <input type="text"
+													class="form-control" id="Username" aria-describedby="Username"
+													placeholder="Krish">
+											</div>
+											<div class="form-group ">
+												<label for="password">Email</label> <input type="email"
+													class="form-control" id="password" placeholder="">
+											</div>
+
+											<div class="form-group ">
+												<label for="password">Phone No.</label> <input type="tel"
+													class="form-control" id="password" placeholder="">
+											</div>
+
+											<div class="form-group ">
+												<label for="password">Company</label> <input type="text"
+													class="form-control" id="password" placeholder="">
+											</div>
+
+											<div>
+												<button class="btn submit-btn-font text-xs-center"
+													style="padding-top: 20px">
+													Submit <img src="assets/img/Home/get_started_arrow.png"
+														style="padding-left: 19px" alt="">
+												</button>
+											</div>
+										</form>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-12 col-sm-12 col-12 first-mob-img get-box-1">
+									<img src="assets\img\login\logo.png" class="main-logo" alt="">
+									<div class="login-brand-content">Acumen is a FinTech
+										Innovation for Small and Medium Practices..</div>
+									<div class="digi">One platform to digitise CA, CPA, CS
+										practice and seamlessly collaborate with its MSME clients.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Success Modal -->
+		<div class="modal " id="success" tabindex="-1" role="dialog" aria-labelledby="success" aria-hidden="true">
+			<div class="modal-dialog modal-xl" role="document">
+				<div class="modal-content">
+					<div class="modal-body ">
+						<div class="row">
+
+							<div class="col-lg-6 col-md-12 col-12 hide-xs" >
+								<div class="login-box-1">
+									<img src="assets\img\login\logo.png" class="main-logo" alt="">
+									<div class="login-brand-content">Acumen is a FinTech
+										Innovation for Small and Medium Practices..</div>
+									<div class="digi">One platform to digitise CA, CPA, CS
+										practice and seamlessly collaborate with its MSME clients.</div>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-12 col-12" >
+								<button type="button" style="padding: 12px;" class="close" data-dismiss="modal"
+									aria-label="Close">
+									<img src="assets\img\login\close.png">
+								</button>
+								<div class="login-box-2 form-field success-box ">
+									<div>
+										<i class="fa fa-check-circle" aria-hidden="true" style="font-size: 50px!important;
+										color: green !important;"></i>
+									</div>
+									<div class="thanks">
+										<span>Thanks for contacting Acumen..</span>
+									</div>
+									<span class="executive ">
+										One of our sales executive will get in touch with you shortly.
+									</span>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-12 col-12 first-mob-img" >
+								<div class="login-box-1">
+									<img src="assets\img\login\logo.png" class="main-logo" alt="">
+									<div class="login-brand-content">Acumen is a FinTech
+										Innovation for Small and Medium Practices..</div>
+									<div class="digi">One platform to digitise CA, CPA, CS
+										practice and seamlessly collaborate with its MSME clients.</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/menu.min.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/custom.js"></script>
+
+		<a href="#" class="back-to-top"><i class="fa fa-angle-up" style="color: #fff!important;"></i></a>
+</body>
+
+</html>

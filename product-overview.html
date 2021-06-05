@@ -1,0 +1,1606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Acumen - A FinTech Platform for Chartered Accountants, Certified Public Accountants (CA/CPA), Company
+		Secretaries and MSMEs</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
+
+	<style>
+		@media (min-width: 576px) {}
+
+
+		@media (min-width: 768px) {}
+
+
+		@media (min-width: 992px) {
+			body {
+				background-image: url("assets/img/Overview/overview_banner.png");
+				background-repeat: no-repeat;
+				background-position-x: right;
+				background-position-y: top;
+				z-index: 1
+			}
+
+			.oval1 {
+				background-image: url("assets/img/Home/oval_1.png");
+				background-repeat: no-repeat;
+				background-position-x: 60px;
+				background-position-y: 10px;
+			}
+
+			.oval2 {
+				background-image: url("assets/img/Home/oval_2.png");
+				background-repeat: no-repeat;
+				background-position-x: 0px;
+				background-position-y: 210px;
+				z-index: 1;
+			}
+		}
+
+
+		@media (min-width: 1200px) {
+			body {
+				background-image: url("assets/img/Overview/overview_banner.png");
+				background-repeat: no-repeat;
+				background-position-x: right;
+				background-position-y: top;
+				z-index: 1
+			}
+
+			.oval1 {
+				background-image: url("assets/img/Home/oval_1.png");
+				background-repeat: no-repeat;
+				background-position-x: 10px;
+				background-position-y: 10px;
+			}
+
+			.oval2 {
+				background-image: url("assets/img/Home/oval_2.png");
+				background-repeat: no-repeat;
+				background-position-x: 0px;
+				background-position-y: 210px;
+				z-index: 1;
+			}
+		}
+
+		@media(min-width:1471px) {
+			body {
+				background-image: url("assets/img/Overview/overview_banner.png");
+				background-repeat: no-repeat;
+				background-position-x: right;
+				background-position-y: top;
+				z-index: 1
+			}
+
+			.oval1 {
+				background-image: url("assets/img/Home/oval_1.png");
+				background-repeat: no-repeat;
+				background-position-x: 200px;
+				background-position-y: 10px;
+			}
+
+			.oval2 {
+				background-image: url("assets/img/Home/oval_2.png");
+				background-repeat: no-repeat;
+				background-position-x: 0px;
+				background-position-y: 110px;
+				z-index: 1;
+			}
+
+		}
+
+
+		.submit-btn-font {
+			font-family: Caros;
+			font-size: 15px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: #ffffff;
+		}
+
+		.submit-btn {
+			width: 52px;
+			height: 18px;
+			margin: 0 64px 0 0;
+			font-family: Caros;
+			font-size: 15px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: #ffffff;
+		}
+
+		.nab-tabs .nav-link {
+			border-bottom: 1px sloid #535353
+		}
+
+		form-control {
+			font-family: Caros;
+			font-size: 14px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: #7e7d7d;
+		}
+
+		form label {
+			width: 60px;
+			height: 15px;
+			margin: 0 290px 15px 0;
+			font-family: Caros;
+			font-size: 12px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: #717171;
+		}
+
+		.modal-body {
+			padding: 0px;
+		}
+
+		.form-field {
+			padding: 40px 0px 0px 0px;
+			border-radius: 4px;
+		}
+
+		.login-brand-content {
+			margin: 28px 0 15px;
+			font-family: Caros;
+			font-size: 22px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.23;
+			letter-spacing: normal;
+			color: #ffffff;
+		}
+
+		.digi {
+			margin: 15px 16px 0 0;
+			opacity: 0.8;
+			font-family: Caros;
+			font-size: 14px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.57;
+			letter-spacing: normal;
+			color: #ffffff;
+		}
+
+		.login {
+			max-width: 1000px;
+			height: 480px;
+			padding: 0 89px 0 0;
+			border-radius: 2px;
+			background-color: #ffffff;
+		}
+
+		.users {
+			height: 19px;
+			margin: 0 186px 15px 0;
+			font-family: Caros;
+			font-size: 16px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: #535353;
+			width: 24px;
+		}
+
+		.sign-in-as {
+			padding: 50px 0px 30px 0px;
+			font-family: Caros;
+			font-size: 24px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: #535353;
+			font-family: Caros;
+		}
+
+		.login-form {
+			padding: 60px 30px 30px 60px
+		}
+
+		.login-box-1 {
+			padding: 158px 64px 157px 60px;
+			border-radius: 2px;
+			background-color: #283b5e;
+			width: 100%;
+		}
+
+		.login-box-2 {
+			padding: 0 89px 0 0;
+			border-radius: 2px;
+			background-color: #ffffff;
+		}
+
+		.skbanner1 {
+			background: #FFF;
+			margin: 50px 20px;
+			padding: 25px 25px;
+		}
+
+		.m-0-10 {
+			margin: 0px 20px !important;
+		}
+
+		.pd-10 {
+			text-align: center;
+			padding: 10px 10px !important;
+			margin-bottom: 30px;
+		}
+
+		.h-btn {
+			background: #fff;
+			color: #fff !important;
+			border-radius: 25px 25px;
+			padding: 16px 25px 16px 25px;
+			box-shadow: 0 0 16px 0 #f5ddd5;
+			background-color: #ffffff;
+		}
+
+		.pd-12 {
+			padding: 12px 12px;
+		}
+
+		.btn-wt {
+			background: #FFF;
+			color: #000;
+			padding: 14px;
+		}
+
+
+		.row-card {
+			margin-top: 150px;
+			padding-left: 150px
+		}
+
+
+		.card {
+			border: none;
+		}
+
+
+		.proud {
+			font-size: 24px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: 0.4px;
+			color: #323452;
+		}
+
+		.practice-sub {
+			font-family: Caros;
+			font-size: 40px;
+			font-weight: bold;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: 0.67px;
+			color: #323452;
+		}
+
+		.practice-content {
+			font-family: Caros;
+			font-size: 16px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.5;
+			letter-spacing: 0.5px;
+			color: #636363;
+		}
+
+		.second-content {
+			font-family: Caros;
+			font-size: 40px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: 0.67px;
+			color: #323452;
+		}
+
+		.content-desc {
+			font-family: Caros;
+			font-size: 16px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.5;
+			letter-spacing: 0.5px;
+			text-align: center;
+			color: #636363;
+		}
+
+		red-font-20 {
+			font-family: Caros;
+			font-size: 20px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: center;
+		}
+
+		.img-title {
+			padding-top: 50px;
+			padding-bottom: 15px;
+			font-family: Caros;
+			font-size: 20px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: center;
+			color: #ff4600;
+		}
+
+		.img-content {
+			font-family: Caros;
+			font-size: 15px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.33;
+			letter-spacing: normal;
+			text-align: center;
+			color: #283b5e;
+		}
+
+		.count {
+			font-size: 50px;
+			font-weight: bold;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: center;
+			color: #283b5e;
+		}
+
+		.count-content {
+			opacity: 0.6;
+			font-family: Caros;
+			font-size: 20px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: center;
+			color: #283b5e;
+		}
+
+		.color-banner {
+			background-color: #fff9f6;
+			height: 650px;
+		}
+
+		.pt-130 {
+			padding-top: 130px
+		}
+
+		.lets-connect {
+			font-size: 14px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: 1px;
+			color: #ff4600 !important;
+		}
+
+		.line {
+			border-right: solid 1px #979797;
+			opacity: 0.1;
+		}
+
+		.get-started {
+			font-family: Caros;
+			font-size: 15px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			color: #ffffff;
+			width: 170px;
+		}
+
+		@media only screen and (max-width: 768px) {
+			.text-xs-center {
+				text-align: center !important;
+			}
+		}
+
+		.rectangle {
+			padding-top: 20px;
+			border-radius: 8px;
+		}
+
+		.rectangle:hover {
+			background-color: #fff9f7;
+		}
+
+		.unfilled-btn {
+			width: 87px;
+			height: 18px;
+			margin: 0 15px 0 0;
+			font-family: Caros;
+			font-size: 15px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: 0.47px;
+			color: #ff4600;
+		}
+
+		.skbanner1 {
+			background: #FFF;
+			margin: 50px 0px;
+			padding: 25px 0px;
+		}
+
+		.m-0-10 {
+			margin: 0px 20px !important;
+		}
+
+		.pd-7 {
+			padding: 7em 1em;
+		}
+
+		.header-main ul.nav>li>a {
+			color: #000;
+			position: relative;
+		}
+
+		.pd-10 {
+			text-align: center;
+			padding: 10px 10px !important;
+			margin-bottom: 30px;
+		}
+
+		.pd-12 {
+			padding: 12px 12px;
+		}
+
+		.btn-wt {
+			background: #FFF;
+			color: #000;
+			padding: 14px;
+		}
+
+
+		.row-card {
+			margin-top: 150px;
+			padding-left: 150px
+		}
+
+		.sub-title {
+			font-family: Caros;
+			font-size: 16px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.56;
+			letter-spacing: 0.56px;
+			color: #747474;
+			padding-top: 18px;
+			margin-left: 5%;
+		}
+
+		.card {
+			border: none;
+		}
+
+		.awards {
+			font-family: Caros;
+			font-size: 18px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.56;
+			letter-spacing: 0.56px;
+			color: #ff4600;
+		}
+
+		.proud {
+			font-size: 24px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: 0.4px;
+			color: #323452;
+		}
+
+
+		.practice-content {
+			font-family: Caros;
+			font-size: 16px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.5;
+			letter-spacing: 0.5px;
+			color: #636363;
+		}
+
+		.second-content {
+			font-family: Caros;
+			font-size: 40px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: 0.67px;
+			color: #323452;
+		}
+
+		.content-desc {
+			font-family: Caros;
+			font-size: 16px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.5;
+			letter-spacing: 0.5px;
+			text-align: center;
+			color: #636363;
+		}
+
+		red-font-20 {
+			font-family: Caros;
+			font-size: 20px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: center;
+		}
+
+		.img-title {
+			padding-top: 50px;
+			padding-bottom: 15px;
+			font-family: Caros;
+			font-size: 20px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: center;
+			color: #ff4600;
+		}
+
+		.img-content {
+			font-family: Caros;
+			font-size: 15px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.33;
+			letter-spacing: normal;
+			text-align: center;
+			color: #283b5e;
+		}
+
+		.count {
+			font-size: 50px;
+			font-weight: bold;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: center;
+			color: #283b5e;
+		}
+
+		.count-content {
+			opacity: 0.6;
+			font-family: Caros;
+			font-size: 20px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: center;
+			color: #283b5e;
+		}
+
+		.im-pdt {
+			padding-top: 5em;
+			width: 35em;
+		}
+
+
+		.m-lf {
+			margin: 0 0 0 12px;
+		}
+
+		.im-lf {
+			height: 14em;
+			width: auto;
+			padding-left: 33%;
+		}
+
+		.t-lf {
+			text-align: left;
+		}
+
+		.Lor-si {
+			opacity: 0.6;
+			font-family: Caros;
+			font-size: 14px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.57;
+			letter-spacing: normal;
+			color: #283b5e;
+		}
+
+		.bx-sh {
+			border-radius: 8px;
+			box-shadow: 4px 4px 36px 0 #e9e9e9;
+			background-color: #ffffff;
+		}
+
+		.pd-15 {
+			padding: 60px 19px 92px 40px;
+		}
+
+		.c1 {
+			padding: 3em 3em 3em 3em;
+			border-color: rgb(151 151 255 / 20%) !important;
+			border-right: 0.1px solid;
+			border-bottom: 0.1px solid;
+		}
+
+		.c22 {
+			border-color: rgb(151 151 255 / 20%) !important;
+			border-bottom: 0.1px solid;
+			/* border-right: 2px solid; */
+			padding: 3em;
+		}
+
+		.t-r {
+			text-align: right;
+		}
+
+		.c33 {
+			padding: 3em 4em 3em 3em;
+			border-color: rgb(151 151 255 / 20%) !important;
+			border-right: 0.1px solid;
+		}
+
+		.c44 {
+			padding: 3em;
+		}
+
+		.ft-19 {
+			font-size: 19px;
+		}
+
+		.ml {
+			margin: 0em 2em;
+		}
+
+		.cl-b {
+			font-family: Caros;
+			font-size: 19px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: #283b5e;
+		}
+
+		.ft-14 {
+			font-size: 14px;
+		}
+
+		.pd-0 {
+			padding: 0px;
+		}
+
+		.bg {
+			background-color: #f9f9f9;
+		}
+
+		.pd-lft {
+			padding-left: 1.5em;
+		}
+
+		.line {
+			border-right: solid 1px #979797;
+			opacity: 0.1;
+		}
+
+		.pd-0 {
+			padding: 0;
+		}
+
+		.c-l {
+			width: 144px;
+			height: 16px;
+			margin: 2px 0 2px 15px;
+			font-family: Caros;
+			font-size: 14px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: 0.44px;
+			color: #636363;
+		}
+
+
+
+		a:hover {
+			color: #fff;
+		}
+
+		.rounded {
+			margin-left: 20px;
+		}
+
+		.key-features {
+			font-family: Caros;
+			font-size: 40px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: 0.67px;
+			color: #323452;
+		}
+
+		.Work-the-way-you-wan {
+			font-family: Caros;
+			font-size: 40px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: 0.67px;
+			color: #323452;
+		}
+
+
+		.rectangle-chip {
+			width: 20px;
+			height: 20px;
+			margin: 0 15px 0 0;
+			padding-left: 15px;
+			font-family: Caros;
+			font-size: 14px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: 0.44px;
+			color: #636363 !important;
+		}
+
+		.pd-60 {
+			padding-bottom: 60px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="pb-165">
+		<header class="header fixed-top ">
+			<div class="header-main love-sticky" style="padding-top: 15px">
+				<div class="container">
+					<div class="row align-items-center position-relative">
+						<div class="col-xl-2 col-lg-2 col-sm-3 col-5">
+							<div class="logo align-top">
+								<a href="home.html"><img src="assets/img/Home/acumen_logo.png" class="main-logo" alt="">
+									<img src="assets/img/Home/acumen_logo.png" class="sticky-logo" alt=""></a>
+							</div>
+						</div>
+
+						<div
+							class="col-lg-10 col-sm-9 col-7 d-flex align-items-center justify-content-end position-static">
+							<div class="nav-wrapper">
+								<ul class="nav">
+									<li class="header-nav"><a href="home.html">Home</a></li>
+									<li class="header-nav header-nav-prod" style="padding-right: 3px"><a
+											href="#">Product <img src="assets/img/Home/product_do wn_arrow.png" alt=""
+												class="current-menu-parent hide-xs">
+										</a>
+										<ul class="sub-menu scroll-md">
+											<hr class="sub-underline">
+											<div class="header-lay">
+												<div class="row" style="padding-bottom: 20px">
+													<div class="col-lg-3 col-md-12 col-sm-12 col-12">
+														<div class="rectangle product-overview">
+															<a href="product-overview.html" class="current-menu-parent">
+																<img alt=""
+																	src="assets/img/Product_Dropdown/Overview.png"><span
+																	class="drop-down-header">Overview</span>
+																<div class="drop-down-content">Connect Acumen with
+																	the tools you already use to have all your team’s
+																	work
+																	in one place.</div>
+															</a>
+														</div>
+													</div>
+
+													<div class="col-lg-3 col-md-12 col-sm-12 col-12">
+														<div class="rectangle ">
+															<a href="product-integrate.html"> <img alt=""
+																	src="assets/img/Product_Dropdown/integrate.png">
+																<span class="drop-down-header">Integration</span>
+																<div class="drop-down-content">Connect Acumen with
+																	the tools you already use to have all your team’s
+																	work
+																	in one place.</div>
+															</a>
+														</div>
+													</div>
+
+													<div class=" col-lg-3 col-md-12 col-sm-12 col-12">
+														<div class="rectangle ">
+															<a href="product-automate.html"> <img alt=""
+																	src="assets/img/Product_Dropdown/automate.png">
+																<span class="drop-down-header">Automate </span>
+																<div class="drop-down-content">Connect Acumen with
+																	the tools you already use to have all your team’s
+																	work
+																	in one place.</div>
+
+															</a>
+														</div>
+													</div>
+
+													<div class="col-lg-3 col-md-12 col-sm-12 col-12">
+														<div class="rectangle ">
+															<a href="product-analyse.html"> <img alt=""
+																	src="assets/img/Product_Dropdown/analize.png"> <span
+																	class="drop-down-header">Analyse</span>
+																<div class="drop-down-content">Connect Acumen with
+																	the tools you already use to have all your team’s
+																	work
+																	in one place.</div>
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-lg-3 col-md-12 col-sm-12 col-12">
+														<div class="rectangle">
+															<a href="product-expand.html"> <img alt=""
+																	src="assets/img/Product_Dropdown/expand.png"><span
+																	class="drop-down-header"> Expand</span>
+																<div class="drop-down-content">Connect Acumen with
+																	the tools you already use to have all your team’s
+																	work
+																	in one place.</div>
+															</a>
+														</div>
+													</div>
+
+												</div>
+
+											</div>
+										</ul>
+									</li>
+									<li class="header-nav"><a href="about-us.html">About us</a></li>
+									<li class="header-nav"><a href="product-contact.html">Contact</a></li>
+									<li class="header-nav" data-toggle="modal" data-target="#login"><a
+											href="#">Login</a></li>
+
+
+									<li class="header-btn" data-toggle="modal" data-target="#success"><a href="#"><span
+												class="lets-connect">Let's
+												Connect</span> <img src="assets/img/Home/lets_connect_arrow.png"
+												style="padding-left: 10px" alt=""> </a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+	<section class="service oval2">
+		<div class="pt-50 pb-165 oval1">
+			<div class="container text-m-center">
+				<div class="row first-mob-img " style="margin-left: 2%;">
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12  ">
+						<div class="">
+							<img src="assets/img/Overview/overview_banner1.jpg" data-rjs="2" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="row banner-btw-btn" style="margin-left: 2%;">
+					<div class="col-xl-6 col-lg-7 col-md-12 col-sm-12 col-12 text-xs-center ">
+						<h1 class="ft-clr ">
+							Simplified Practice <br>Management
+						</h1>
+						<p class="sub-title ">
+							One platform to digitise CA, CPA, CS practice and <br />
+							seamlessly collaborate with its MSME clients
+						</p>
+						<div class="row ">
+							<div class="col-lg-auto col-md-auto col-md-12 col-12 text-xs-center text-m-center"
+								style="padding-top: 30px;" data-toggle="modal" data-target="#getStarted">
+								<a href="#" class="btn get-started">Get started <img style="padding-left: 10px"
+										src="assets/img/Home/get_started_arrow.png" alt=""></a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="service pb-90">
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-12 col-sm-12 col-12 text-xs-center">
+					<div class="section-title title-shape title-shape-c2 text-center">
+						<P class="awards ">Our Product</p>
+						<p class="key-features">Key Features</p>
+						<P class="content-desc Fi-Risk">
+							Finance, Risk Regulatory and Statutory Compliances are an
+							important ongoing concer to all businesses.<br> New normal,
+							too many items, manual work and no easy way exists for small and
+							medium practices <br> No real-time, value-added
+							collaboration platform to service and clients need.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row  pb-60">
+				<div class="col-lg-4 col-md-12 col-sm-12 col-12 text-xs-center mt20">
+					<div class="pd-15 bx-sh">
+						<div class="service-icon t-lf text-xs-center text-m-center">
+							<img src="assets/img/Overview/key_feature_1.png" alt="">
+						</div>
+						<div class="service-content t-lf text-xs-center text-m-center mt20">
+
+							<h3 class="ft-19 cl-b">
+								Cloud based <br> Integrated Platform
+							</h3>
+
+							<p class="ft-14 Lor-si">
+								<br>Larem ipsum dolor sit amet, consectetur <br>
+								adipiscing elit sed do eiusmod tempor<br> incididunt
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-12 col-sm-12 col-12 text-xs-center mt20">
+					<div class="pd-15 bx-sh">
+						<div class="service-icon t-lf text-xs-center text-m-center">
+							<img src="assets/img/Overview/key_feature_2.png" alt="">
+						</div>
+						<div class="service-content t-lf text-xs-center text-m-center mt20">
+							<h3 class="ft-19 cl-b">
+								Focused on serving <br> SMP & SME
+							</h3>
+							<p class="ft-14 Lor-si">
+								<br>Larem ipsum dolor sit amet, consectetur <br>
+								adipiscing elit sed do eiusmod tempor<br> incididunt
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-12 col-sm-12 col-12 text-xs-center mt20">
+					<div class="pd-15 bx-sh">
+						<div class="service-icon t-lf text-xs-center text-m-center">
+							<img src="assets/img/Overview/key_feature_3.png" alt="">
+						</div>
+						<div class="service-content t-lf text-xs-center text-m-center mt20">
+							<h3 class="ft-19 cl-b">
+								Automation & <br /> Digital Transformation
+
+							</h3>
+							<p class="ft-14 Lor-si">
+								<br>Larem ipsum dolor sit amet, consectetur <br>
+								adipiscing elit sed do eiusmod tempor<br> incididunt
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row  pb-60">
+				<div class="col-lg-4 col-md-12 col-sm-12 col-12  mt20">
+					<div class="pd-15 bx-sh">
+						<div class="service-icon t-lf text-xs-center text-m-center">
+							<img src="assets/img/Overview/key_feature_4.png" alt="">
+						</div>
+						<div class="service-content t-lf text-xs-center text-m-center mt20">
+
+							<h3 class="ft-19 cl-b ">
+								Value based <br> Analytics
+							</h3>
+							<p class="ft-14 Lor-si text-xs-center text-m-center">
+								<br>Larem ipsum dolor sit amet, consectetur <br>
+								adipiscing elit sed do eiusmod tempor<br> incididunt
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-12 col-sm-12 col-12  mt20">
+					<div class="pd-15 bx-sh">
+						<div class="service-icon t-lf  text-xs-center text-m-center ">
+							<img src="assets/img/Overview/key_feature_5.png" alt="">
+						</div>
+						<div class="service-content t-lf  text-xs-center text-m-center mt20">
+
+							<h3 class="ft-19 cl-b">
+								SME funding & <br> Trade Finance
+							</h3>
+							<p class="ft-14 Lor-si">
+								<br>Larem ipsum dolor sit amet, consectetur <br>
+								adipiscing elit sed do eiusmod tempor<br> incididunt
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-12 col-sm-12 col-12  mt20">
+					<div class="pd-15 bx-sh">
+						<div class="service-icon t-lf  text-xs-center text-m-center ">
+							<img src="assets/img/Overview/key_feature_6.png" alt="">
+						</div>
+						<div class="service-content t-lf  text-xs-center text-m-center mt20">
+
+							<h3 class="ft-19 cl-b">
+								Seamless <br> collaboration
+							</h3>
+
+							<p class="ft-14 Lor-si">
+								<br>Larem ipsum dolor sit amet, consectetur <br>
+								adipiscing elit sed do eiusmod tempor<br> incididunt
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="skbanner1 mt20" style="background-color: #fff9f6">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-12 text-xs-center">
+					<div class="section-title title-shape title-shape-c2 text-center">
+						<P class="awards ">Modules</p>
+						<p class="Work-the-way-you-wan">Work the way you want</p>
+						<P class="content-desc">Pick the modules you like to subscribe</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="content-desc">
+				<button type="button" class="btn-br shadow p-3 mb-5 bg-white rounded ">
+					<input class="form-check-input" type="checkbox" value="ClientManagement" id="ClientManagement">
+					<span class="rectangle-chip"></span> <span class="rectangle-chip"> Client Management</span>
+				</button>
+				<button type="button" class="btn-br shadow p-3 mb-5 bg-white rounded">
+					<input class="form-check-input" type="checkbox" value="TeamManagement" id="TeamManagement">
+					<span class="rectangle-chip"></span> <span class="rectangle-chip">Team Management</span>
+				</button>
+				<button type="button" class="btn-br shadow p-3 mb-5 bg-white rounded">
+					<input class="form-check-input" type="checkbox" value="ComplianceManagement"
+						id="ComplianceManagement">
+					<span class="rectangle-chip"> </span> <span class="rectangle-chip">Compliance
+						Management</span>
+				</button>
+				<button type="button" class="btn-br shadow p-3 mb-5 bg-white rounded">
+					<input class="form-check-input" type="checkbox" value="DocumentExchange" id="DocumentExchange">
+					<span class="rectangle-chip"></span> <span class="rectangle-chip">Document Exchange</span>
+				</button>
+				<br>
+				<button type="button" class="btn-br shadow p-3 mb-5 bg-white rounded">
+					<input class="form-check-input" type="checkbox" value="EnterpriseAnalytics"
+						id="EnterpriseAnalytics">
+					<span class="rectangle-chip"></span> <span class="rectangle-chip">Enterprise
+						Analytics</span>
+				</button>
+				<button type="button" class="btn-br shadow p-3 mb-5 bg-white rounded">
+					<input class="form-check-input" type="checkbox" value="FinancialAnalytics" id="FinancialAnalytics">
+					<span class="rectangle-chip"></span> <span class="rectangle-chip">Financial Analytics</span>
+				</button>
+				<button type="button" class="btn-br shadow p-3 mb-5 bg-white rounded">
+					<input class="form-check-input" type="checkbox" value="e-Invoicing" id="e-Invoicing">
+					<span class="rectangle-chip"></span> <span class="rectangle-chip">e-Invoicing</span>
+				</button>
+				<button type="button" class="btn-br shadow p-3 mb-5 bg-white rounded">
+					<input class="form-check-input" type="checkbox" value="GSTManagement" id="GSTManagement">
+					<span class="rectangle-chip"></span> <span class="rectangle-chip">GST Management</span>
+				</button>
+				<br>
+				<button type="button" class="btn-br shadow p-3 mb-5 bg-white rounded">
+					<input class="form-check-input" type="checkbox" value="" id="KYCAML">
+					<span class="rectangle-chip"></span> <span class="rectangle-chip">KYC/AML</span>
+				</button>
+				<button type="button" class="btn-br shadow p-3 mb-5 bg-white rounded">
+					<input class="form-check-input" type="checkbox" value="SMEFunding" id="SMEFunding">
+					<span class="rectangle-chip"></span> <span class="rectangle-chip">SME Funding</span>
+				</button>
+				<button type="button" class="btn-br shadow p-3 mb-5 bg-white rounded">
+					<input class="form-check-input" type="checkbox" value="MarketPlace" id="MarketPlace">
+					<span class="rectangle-chip"></span> <span class="rectangle-chip">Market Place</span>
+				</button>
+				<br>
+			</div>
+			<div class="row ">
+				<div class="col-md-12 col-12 text-xs-center text-m-center text-center" style="padding-top: 30px;"
+					data-toggle="modal" data-target="#getStarted">
+					<a href="#" class="btn get-started">Get started <img style="padding-left: 10px"
+							src="assets/img/Home/get_started_arrow.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section>
+		<div class="skbanner1 m-0-10">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-12 col-sm-12 col-12 text-xs-center text-m-center">
+						<div class="banner-content">
+							<label class="awards ">Benifits</label><br> <label class="practice-sub"> Business for you
+								and <br>your
+								clients
+							</label>
+							<div class="practice-content ">Acumen in Collaboration
+								platform between proctising Accountant and its end Client to
+								embark on digital automation journey.</div>
+							<div class="row banner-btw-btn mt20">
+								<div class="text-xs-center col-12 mt20">
+									<a href="#" class="clr-cr "><span class="unfilled-btn">Know more</span> <img
+											src="assets/img/Home/lets_connect_arrow.png" class="main-logo" alt=""> </a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-12 col-sm-12 col-12  bg">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-6 col-md-6  col-sm-12 col-12 border-sm  c1">
+									<div class="ml ">
+										<div class="service-icon t-lf text-xs-center text-m-center">
+											<img src="assets/img/Overview/benefits_1.png" alt="">
+										</div>
+										<div class="service-content t-lf text-xs-center text-m-center">
+											<p>
+												<br>Employee <br> Productivity
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-lg-6 col-md-6  col-sm-12 col-12  border-sm  c22">
+									<div class=" ml">
+										<div class="service-icon t-lf text-xs-center text-m-center">
+											<img src="assets/img/Overview/benefits_2.png" alt="">
+										</div>
+										<div class="service-content t-lf text-xs-center text-m-center">
+
+											<p>
+												<br>Sale more <br> Services
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-lg-6 col-md-6  col-sm-12 col-12  border-sm c1">
+									<div class="ml ">
+										<div class="service-icon t-lf text-xs-center text-m-center">
+											<img src="assets/img/Overview/benefits_3.png" alt="">
+										</div>
+										<div class="service-content t-lf text-xs-center text-m-center">
+
+											<p>
+												<br>Document Sharing <br> with Workflow
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6  col-sm-12 col-12 border-sm c22 ">
+									<div class="ml ">
+										<div class="service-icon t-lf text-xs-center text-m-center">
+											<img src="assets/img/Overview/benefits_4.png" alt="">
+										</div>
+										<div class="service-content t-lf text-xs-center text-m-center">
+
+											<p>
+												<br>Compliance <br> on Autopilot
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-lg-6 col-md-6  col-sm-12 col-12  border-sm c33">
+									<div class="ml ">
+										<div class="service-icon t-lf text-xs-center text-m-center">
+											<img src="assets/img/Overview/benefits_5.png" alt="">
+										</div>
+										<div class="service-content t-lf text-xs-center text-m-center">
+											<p>
+												<br>Data <br> Analytics
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6  col-sm-12 col-12 border-sm c44">
+									<div class="ml ">
+										<div class="service-icon t-lf text-xs-center text-m-center">
+											<img src="assets/img/Overview/benefits_6.png" alt="">
+										</div>
+										<div class="service-content t-lf text-xs-center text-m-center">
+											<p>
+												<br>Increase <br> Revenue
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="row footer-logo footer-adjust text-xs-center">
+			<div class="col-lg-3 col-md-12 col-sm-12 col-12 pd-0">
+				<img src="assets/img/Home/acumen_logo.png">
+			</div>
+		</div>
+		<div class="row footer-adjust">
+			<div class="offset-lg-1  col-lg-1 col-md-5  col-sm-12 col-12 text-left text-xs-center pd-0">
+				<div class="widget widget_nav_menu">
+					<h3 class="footer-header">Company</h3>
+					<ul id="menu">
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Career</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class=" col-lg-1 col-md-1 text-center line "></div>
+
+			<div class="offset-lg-1 col-lg-1 col-md-5 col-sm-12 col-12 text-left text-xs-center  pd-0">
+				<div class="widget widget_nav_menu">
+					<h3 class="footer-header">Product</h3>
+					<ul id="menu">
+						<li><a href="product-overview.html">Overview</a></li>
+						<li><a href="product-integrate.html">Integration</a></li>
+						<li><a href="product-automate.html">Automate</a></li>
+						<li><a href="product-analyse.html">Analyse</a></li>
+						<li><a href="product-expand.html"> Expand</a></li>
+					</ul>
+
+				</div>
+			</div>
+
+			<div class=" col-lg-1 col-md-1 text-center line hide-xs "></div>
+
+			<div class=" offset-lg-1 col-lg-1  col-md-5 col-sm-12 col-12 text-left text-xs-center pd-0">
+				<div class="widget widget_nav_menu">
+					<h3 class="footer-header">Useful Link</h3>
+					<div class="menu-dvpn-container">
+						<ul class="menu" id="menu">
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Support</a></li>
+							<li><a href="#">FAQ's</a></li>
+							<li><a href="#">News Letters</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class=" col-lg-1 col-md-1 text-right  line "></div>
+
+			<div class="offset-lg-1 col-lg-2 col-md-5 col-sm-12 col-12 text-left text-xs-center  pd-0">
+				<div class="widget widget_nav_menu" id="connect-us">
+					<h3 class="footer-header">Contact with us</h3>
+					<a href="https://www.facebook.com/"><i class="fa fa-facebook pd-10"></i> </a> <a
+						href="https://twitter.com/"><i class="fa fa-twitter pd-10"></i> </a> <a
+						href="https://www.linkedin.com/"><i class="fa fa-linkedin pd-10"></i> </a>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div class="row" style="padding-top: 20px">
+			<div class="offset-1 col-10 " style="border-top: 1px solid #dee2e7">
+				<div class="footer-bottom-text text-center ">Copyright 2020.
+					All rights reserved by Acumen Analytics Services Pvt. Ltd.</div>
+			</div>
+
+		</div>
+	</footer>
+
+	<!--Login  Modal -->
+	<div class="modal " id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl" role="document">
+			<div class="modal-content">
+				<div class="modal-body ">
+					<div class="row">
+						<div class="col-lg-6 col-md-12 col-sm-12 col-12 hide-xs ">
+							<div class="login-box-1">
+								<img src="assets\img\login\logo.png" class="main-logo" alt="">
+								<div class="login-brand-content">Acumen is a FinTech
+									Innovation for Small and Medium Practices..</div>
+								<div class="digi">One platform to digitise CA, CPA, CS
+									practice and seamlessly collaborate with its MSME clients.</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-12 col-sm-12 col-12  ">
+							<button type="button" style="padding: 12px;" class="close" data-dismiss="modal"
+								aria-label="Close">
+								<img src="assets\img\login\close.png">
+							</button>
+							<div class="login-box-2 login-form">
+								<div class="sign-in-as">
+									<span>Sign in as..</span>
+								</div>
+
+								<ul class="nav nav-tabs" id="myTab" role="tablist">
+									<li class="nav-item"><a class="nav-link active " id="home-tab" data-toggle="tab"
+											href="#home" role="tab" aria-controls="home" aria-selected="true">CA</a>
+									</li>
+									<li class="nav-item"><a class="nav-link" id="profile-tab" data-toggle="tab"
+											href="#profile" role="tab" aria-controls="profile"
+											aria-selected="false">Customer</a></li>
+
+								</ul>
+								<div class="tab-content" id="myTabContent">
+									<div class="tab-pane fade show active" id="home" role="tabpanel"
+										aria-labelledby="home-tab">
+										<div class="form-field">
+											<form>
+												<div class="form-group ">
+													<label for="exampleInputEmail1">Username </label> <input
+														type="email" class="form-control" id="Username"
+														aria-describedby="Username" placeholder="Krish">
+												</div>
+												<div class="form-group ">
+													<label for="password">Password</label> <input type="password"
+														class="form-control" id="password" placeholder="Password">
+												</div>
+												<div>
+													<button class="btn text-xs-center submit-btn-font"
+														style="padding-top: 20px">
+														Submit <img src="assets/img/Home/get_started_arrow.png"
+															style="padding-left: 19px" alt="">
+													</button>
+												</div>
+											</form>
+
+										</div>
+									</div>
+									<div class="tab-pane fade" id="profile" role="tabpanel"
+										aria-labelledby="profile-tab">
+										<div class="tab-pane fade show active" id="home" role="tabpanel"
+											aria-labelledby="home-tab">
+											<div class="form-field">
+												<form>
+													<div class="form-group ">
+														<label for="exampleInputEmail1">Username </label> <input
+															type="email" class="form-control" id="Username"
+															aria-describedby="Username" placeholder="Krish">
+													</div>
+													<div class="form-group ">
+														<label for="password">Password</label> <input type="password"
+															class="form-control" id="password" placeholder="Password">
+													</div>
+													<button class="btn submit-btn-font text-xs-center"
+														style="padding-top: 20px">
+														Submit <img src="assets/img/Home/get_started_arrow.png"
+															style="padding-left: 19px" alt="">
+													</button>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-md-12 col-sm-12 col-12 first-mob-img ">
+							<div class="login-box-1">
+								<img src="assets\img\login\logo.png" class="main-logo" alt="">
+								<div class="login-brand-content">Acumen is a FinTech
+									Innovation for Small and Medium Practices..</div>
+								<div class="digi">One platform to digitise CA, CPA, CS
+									practice and seamlessly collaborate with its MSME clients.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Get started  Modal -->
+	<div class="modal " id="getStarted" tabindex="-1" role="dialog" aria-labelledby="getStarted" aria-hidden="true">
+		<div class="modal-dialog modal-xl" role="document">
+			<div class="modal-content">
+				<div class="modal-body ">
+					<div class="row ">
+
+						<div class="col-lg-6 col-md-12 col-12 hide-xs get-box-1">
+								<img src="assets\img\login\logo.png" class="main-logo" alt="">
+								<div class="login-brand-content">Acumen is a FinTech
+									Innovation for Small and Medium Practices..</div>
+								<div class="digi">One platform to digitise CA, CPA, CS
+									practice and seamlessly collaborate with its MSME clients.</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-md-12  col-sm-12  col-12 ">
+							<button type="button" style="padding: 12px;" class="close" data-dismiss="modal"
+								aria-label="Close">
+								<img src="assets\img\login\close.png">
+							</button>
+							<div class="login-box-2 login-form">
+								<div class="sign-in-as">
+									<span>Get started..</span>
+								</div>
+								<div class="form-field-1">
+									<form>
+										<div class="form-group ">
+											<label for="exampleInputEmail1">Name </label> <input type="text"
+												class="form-control" id="Username" aria-describedby="Username"
+												placeholder="Krish">
+										</div>
+										<div class="form-group ">
+											<label for="password">Email</label> <input type="email" class="form-control"
+												id="password" placeholder="">
+										</div>
+
+										<div class="form-group ">
+											<label for="password">Phone No.</label> <input type="tel"
+												class="form-control" id="password" placeholder="">
+										</div>
+
+										<div class="form-group ">
+											<label for="password">Company</label> <input type="text"
+												class="form-control" id="password" placeholder="">
+										</div>
+
+										<div>
+											<button class="btn submit-btn-font text-xs-center"
+												style="padding-top: 20px">
+												Submit <img src="assets/img/Home/get_started_arrow.png"
+													style="padding-left: 19px" alt="">
+											</button>
+										</div>
+									</form>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-md-12 col-sm-12 col-12 first-mob-img get-box-1">
+								<img src="assets\img\login\logo.png" class="main-logo" alt="">
+								<div class="login-brand-content">Acumen is a FinTech
+									Innovation for Small and Medium Practices..</div>
+								<div class="digi">One platform to digitise CA, CPA, CS
+									practice and seamlessly collaborate with its MSME clients.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Success Modal -->
+	<div class="modal " id="success" tabindex="-1" role="dialog" aria-labelledby="success" aria-hidden="true">
+		<div class="modal-dialog modal-xl" role="document">
+			<div class="modal-content">
+				<div class="modal-body ">
+					<div class="row">
+
+						<div class="col-lg-6 col-md-12 col-12 hide-xs">
+							<div class="login-box-1">
+								<img src="assets\img\login\logo.png" class="main-logo" alt="">
+								<div class="login-brand-content">Acumen is a FinTech
+									Innovation for Small and Medium Practices..</div>
+								<div class="digi">One platform to digitise CA, CPA, CS
+									practice and seamlessly collaborate with its MSME clients.</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-md-12 col-12">
+							<button type="button" style="padding: 12px;" class="close" data-dismiss="modal"
+								aria-label="Close">
+								<img src="assets\img\login\close.png">
+							</button>
+							<div class="login-box-2 form-field success-box ">
+								<div>
+									<i class="fa fa-check-circle" aria-hidden="true" style="font-size: 50px!important;
+									color: green !important;"></i>
+								</div>
+								<div class="thanks">
+									<span>Thanks for contacting Acumen..</span>
+								</div>
+								<span class="executive ">
+									One of our sales executive will get in touch with you shortly.
+								</span>
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-md-12 col-12 first-mob-img">
+							<div class="login-box-1">
+								<img src="assets\img\login\logo.png" class="main-logo" alt="">
+								<div class="login-brand-content">Acumen is a FinTech
+									Innovation for Small and Medium Practices..</div>
+								<div class="digi">One platform to digitise CA, CPA, CS
+									practice and seamlessly collaborate with its MSME clients.</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/menu.min.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/custom.js"></script>
+
+	<a href="#" class="back-to-top"><i class="fa fa-angle-up" style="color: #fff!important;"></i></a>
+</body>
+
+</html>
